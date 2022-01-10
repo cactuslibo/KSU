@@ -265,7 +265,7 @@ a:hover {
 }
 
 .span3 {
-
+width: 30%;
 }
 
 .span2 {
@@ -5841,4 +5841,8 @@ a.badge:hover {
 
 .affix {
   position: fixed;
+}
+
+.span3 {
+	
 }
