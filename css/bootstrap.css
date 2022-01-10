@@ -71,7 +71,6 @@ sub {
 img {
 	vertical-align: middle;
 	border: 0;
-	width: 100%;
 }
 
 #map_canvas img {
@@ -232,7 +231,7 @@ a:hover {
 }
 
 .span11 {
-  width: 860px;
+	width: 500px;
 }
 
 .span10 {
@@ -380,10 +379,9 @@ a:hover {
 
 
 
+
   *width: 91.43617021276594%
-	width: 0%;
-	width: 80%;
-	height: 80%;
+	width: 0%
 }
 
 .row-fluid .span10 {
