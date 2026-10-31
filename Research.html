@@ -14,6 +14,8 @@
       padding-top: 60px;
       padding-bottom: 40px;
     }
+    .row-fluid > .span2 { width: 440px !important; min-width: 440px; float: left !important; }
+    .row-fluid > .span8 { width: auto !important; float: none !important; overflow: hidden; margin-left: 460px !important; }
     .sidebar-nav {
       padding: 9px 0;
     }
@@ -28,7 +30,17 @@
       font-size: 14px;
     }
   </style>
-  <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <style type="text/css">
+    @media (max-width: 767px) {
+      body { padding-top: 0; padding-left: 10px; padding-right: 10px; }
+      .row-fluid > .span2, .row-fluid > .span8 { width: 100% !important; min-width: 0 !important; float: none !important; margin-left: 0 !important; }
+      img { max-width: 100%; height: auto; }
+      p { font-size: 16px; }
+      .hero-unit-jerome { padding: 10px 0; }
+      .navbar-fixed-top { margin-left: -10px; margin-right: -10px; }
+    }
+  </style>
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -87,7 +99,7 @@
       <div class="container-fluid">
         <div class="row-fluid">
 
-          <div class="span3">
+          <div class="span2">
             <div class="well sidebar-nav">
               <ul class="nav nav-list">
                 <img src="img/1 DA oligomer.png" width="100%";>
@@ -95,14 +107,16 @@
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
-          <div class="span7">
+          <div class="span8">
             <div class="hero-unit-jerome">
               <h4>Understanding charge transport at single molecule level</h4>
               <p>Charge transport in single  molecule is the basis of any self-assembled electronically active systems. However, there is still a lack of fundamental  understanding of the charge transport mechanism in molecules. The key challenge  is to understand how the molecular structure and conformation determines intrachain  charge transport. As a result, building even a simple molecular conductor that  entails long range charge transport beyond several nanometers is still not  feasible. In my recent work, I have explored the single molecule conductance of  donor-acceptor typed oligomers and oxazole-terminated conjugated oligomers. In addition, the key  factors that determine ultrahigh conductance of redox-active oligopeptides have been discovered, which  will provide important insights for achieving the long-range charge transport  in single molecules</p>
               <p>1. <strong>B. Li</strong>, S. Li, A. Ellington, E. Anslyn and C.M. Schroeder, “Single Molecule Study of Charge Transport in Sequence-defined  Redox Active Biomolecules”, (<em>in  prep</em>)<br>
-                2.S. Li, H. Yu, K. Schwieter, K. Chen, <strong>B. Li</strong>, Y. Liu, J. S. Moore and C.M. Schroeder, &quot;Charge  Transport and Quantum Interference Effects in Oxazole-Terminated Conjugated  Oligomers”, <strong><em>Journal of the  American Chemical Society, </em></strong>141, 16079 (2019)<br>
-                3. <strong>B. Li</strong>, H. Yu, E. C. Montoto, Y.  Liu, S. Li, K. E. Schwieter, J. Rodriguez-Lopez, J. Moore and C. M. Schroeder,  &quot; Intrachain charge transport through conjugated donor-acceptor  oligomers&quot;,<strong><em> ACS Applied Electronic  Materials</em></strong><em>,</em> 1,7,  (2018)<strong> </strong><br>
-                4.X. Xin, <strong>B. Li</strong>, J.  Jung, R. Biswas and Z. Lin, &quot;Charge transfer at the semiconductor quantum dot/TiO2  interface in quantum dot-sensitized solar cells: ab initio simulation”, <strong><em>Particle  and Particle Systems Characterization</em></strong>,<em> 32</em>, 80 (2015)<br>
+                2. A. S. Qu, Z. Ou, Y. Savsatli, L. Yao, Y. Cao, H. Yu, E. C. Montoto, J. Hui, <strong>B. Li</strong>, J. A. N. T. Soares, L. Kisley, B. P. Bailey, E. A. Murphy, J. Liu, J. Huang, C. M. Evans, C. M. Schroeder, J. Rodríguez-López, J. S. Moore, Q. Chen and P. V. Braun, &quot;Visualizing energy transfer between redox-active colloids&quot;, <strong><em>Science Advances, </em></strong>11, eady7716 (2025)<br>
+                3. R. Dumont, J. Dowdell, J. Song, J. Li, S. Wang, W. Kang and <strong>B. Li</strong>,* &quot;Control of Charge Transport in Electronically Active Systems towards Integrated Biomolecular Circuits (IbC)&quot;, <strong><em>Journal of Materials Chemistry B, </em></strong>11, 8302 (2023)<br>
+                4. S. Li, H. Yu, K. Schwieter, K. Chen, <strong>B. Li</strong>, Y. Liu, J. S. Moore and C.M. Schroeder, &quot;Charge  Transport and Quantum Interference Effects in Oxazole-Terminated Conjugated  Oligomers”, <strong><em>Journal of the  American Chemical Society, </em></strong>141, 16079 (2019)<br>
+                5. <strong>B. Li</strong>, H. Yu, E. C. Montoto, Y.  Liu, S. Li, K. E. Schwieter, J. Rodriguez-Lopez, J. Moore and C. M. Schroeder,  &quot; Intrachain charge transport through conjugated donor-acceptor  oligomers&quot;,<strong><em> ACS Applied Electronic  Materials</em></strong><em>,</em> 1,7,  (2018)<strong> </strong><br>
+                6. X. Xin, <strong>B. Li</strong>, J.  Jung, R. Biswas and Z. Lin, &quot;Charge transfer at the semiconductor quantum dot/TiO2  interface in quantum dot-sensitized solar cells: ab initio simulation”, <strong><em>Particle  and Particle Systems Characterization</em></strong>,<em> 32</em>, 80 (2015)<br>
               </p>
             </div>
           </div>
@@ -112,7 +126,33 @@
       <div class="container-fluid">
         <div class="row-fluid">
 
-          <div class="span3">
+          <div class="span2">
+            <div class="well sidebar-nav">
+              <ul class="nav nav-list">
+                <li><img src="img/11 LLPS schematic.png" width="100%"></li>
+				  <li><img src="img/12 Condensate rheology.png" width="100%"></li>
+              </ul>
+            </div><!--/.well -->
+          </div><!--/span-->
+          <div class="span8">
+            <div class="hero-unit-jerome">
+              <h4>Biosystem Design via Self-Assembly and Phase Change</h4>
+              <p>Living cells organize biochemical reactions in time and space using self-assembled protein architectures and biomolecular condensates, dynamic compartments formed by liquid-liquid phase separation (LLPS) that concentrate proteins and enzymes. Inspired by nature, I am interested in designing synthetic biosystems via protein self-assembly and phase change. Together with collaborators, we have organized enzymes on self-assembled protein cages for cascade reactions, built dynamic metabolons using stimuli-responsive protein cages, and engineered self-assembled protein cages for targeted dual functionalization. In addition, we designed synthetic catalytic condensates that selectively recruit enzymes, and showed that they initially accelerate enzymatic reactions but gradually lose efficiency as condensates age and transition from liquid-like to solid-like states, both in vitro and in living cells. These studies provide insights for designing functional synthetic condensates and self-assembled biosystems.</p>
+              <p>1. W. Kang, Z. Wu, X. Huang, H. Qi, J. Wu, J. Wang, J. Li, S. Wu, B.-H. Kang, <strong>B. Li</strong>,* J. Ma and C. Xue, &quot;Time-dependent catalytic activity in aging condensates&rdquo;, <strong><em>Nature Communications</em></strong>, 16, 6959 (2025)<br>
+                2. X. Ma, L. Yi, J. Li, J. Ma, W. Li, L. Wang, C. Liu, <strong>B. Li</strong>, D. Ning, W. Kang and C. Xue, &quot;Engineering a self-assembled protein cage for targeted dual functionalization&rdquo;, <strong><em>Nano Letters</em></strong>, 24, 9237 (2024)<br>
+                3. W. Kang, X. Ma, H. Zhang, J. Ma, C. Liu, J. Li, H. Guo, D. Wang, R. Wang, <strong>B. Li</strong> and C. Xue, &quot;Dynamic Metabolons Using Stimuli-Responsive Protein Cages&rdquo;, <strong><em>Journal of the American Chemical Society</em></strong>, 146, 6686 (2024)<br>
+                4. W. Kang, X. Ma, C. Liu, S. Wang, Y. Zhou, C. Xue, Y. Xu and <strong>B. Li</strong>,* &quot;Liquid-liquid Phase Separation (LLPS) in Synthetic Biosystems&rdquo;, <strong><em>Materials Science and Engineering: R: Reports</em></strong>, 157, 100762 (2024)<br>
+                5. W. Kang, X. Ma, D. Kakarla, H. Zhang, Y. Fang, B. Chen, K. Zhu, D. Zheng, Z. Wu, <strong>B. Li</strong>,* and C. Xue,* &quot;Organizing Enzymes on Self-Assembled Protein Cages for Cascade Reactions&rdquo;, <strong><em>Angewandte Chemie International Edition</em></strong>, e202214001 (2022)<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container-fluid">
+        <div class="row-fluid">
+
+          <div class="span2">
             <div class="well sidebar-nav">
               <ul class="nav nav-list">
                 <li><img src="img/3 FESA.png" width="100%"></li>
@@ -120,7 +160,7 @@
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
-          <div class="span7">
+          <div class="span8">
             <div class="hero-unit-jerome">
               <h4>Controlled self-assembly under non-equilibrium conditions </h4>
               <p>Notably, nanomaterials, such as functional nanoparticles/nanowires,  carbon nanotube, supramolecular materials, are typically synthesized with  specific procedures in solution and need to be assembled into nanoelectronic  circuits thereafter. The key to solution-based nanomaterial assembly lies in confining  functional nanomaterials assembly under non-equilibrium conditions. I worked on self-assembly of nanomaterials under  non-equilibrium condition (e.g., evaporation-induced self-assembly) using various nanomaterials, aiming to explore general rules for nanomaterials assembly and the dominate factors that governs the non-equilibrium kinetics</p>
@@ -142,14 +182,14 @@
       <div class="container-fluid">
         <div class="row-fluid">
 
-          <div class="span3">
+          <div class="span2">
             <div class="well sidebar-nav">
               <ul class="nav nav-list">
                 <li><img src="img/7 DFAG4T.png" width="100%"></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
-          <div class="span7">
+          <div class="span8">
             <div class="hero-unit-jerome">
               <h4>Controlled self-assembly via non-covalent interactions</h4>
               <p>Self-assembly via non-covalent interactions is a powerful method that can be used to generate materials with well-defined structures across multiple length scales. Inspired by nature, a possible way to achieve complicated interconnected 3D network architecture at nanometer scale is via hierarchical  assembly directed by non-covalent interactions. For example, supramolecular assemblies consisting of biopolymer polymer subunits are specifically known to exhibit exceptional structural and functional diversity as well as programmable control of noncovalent interactions through hydrogen bonding in biopolymer subunits. My goal is to understandthe relationship between the  non-covalent interactions of molecules and the final assembled structure.</p>
@@ -169,14 +209,14 @@
       <div class="container-fluid">
         <div class="row-fluid">
 
-          <div class="span3">
+          <div class="span2">
             <div class="well sidebar-nav">
               <ul class="nav nav-list">
                 <li><img src="img/9 Crack.png" width="100%"></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
-          <div class="span7">
+          <div class="span8">
             <div class="hero-unit-jerome">
               <h4>Lithography-free microstructure fabrication</h4>
               <p>To face formidable challenges of future devices with complex  functionality and architecture, not only new materials but also new fabrication  method need to be developed. In addition, geometrical confinement using microstructure is an important strategy for constructing  hierarchically structured nanocomposites assembly, entailing novel optical, electrical, and magnetic properties for various of potential  applications. However, microstructures are oftern fabricated by complicated  lithographic method, which are  usually expensive and time-consuming, and not suitable for large scale manufacture. Therefore, a low-cost, large-scale method  needs to be developed. To this end, I have developed a new strategy for massive parallel  fabrication of microstructures by leveraging the film-cracking technique..</p> 
@@ -195,14 +235,14 @@
       <div class="container-fluid">
         <div class="row-fluid">
 
-          <div class="span3">
+          <div class="span2">
             <div class="well sidebar-nav">
               <ul class="nav nav-list">
                 <li><img src="img/10 Goldwire.png" width="100%"></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
-          <div class="span7">
+          <div class="span8">
             <div class="hero-unit-jerome">
               <h4>Organic-inorganic nanomaterials systhesis</h4>
               <p>Colloidal nanocrystals exhibit a wide range of size- and shapedependent properties and have found application in myriad  fields, incuding optics, electronics, mechanics, drug delivery  and catalysis. Synthetic protocols that  enable the simple and convenient production of colloidal nanocrystals with controlled size, shape and composition are therefore of key general importance. However,   procedures such as organic solution-phase synthesis, thermolysis of organometallic precursors, sol–gel processes and hydrothermal reactions require stringent experimental conditions,  are difficult to generalize, or necessitate tedious multistep  reactions and purification. In such context, I am interested in organic-inorganic nanomaterial synthesis  using organic templates, including DNA, self-assembled block-copolymer  micelles, unimolecular star-like block-copolymers. These nanomaterials also serve as buildibing blocks for &ldquo;bottom-up&rdquo; self-assembly as mentioned above.</p>
